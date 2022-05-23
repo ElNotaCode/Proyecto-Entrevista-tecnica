@@ -14,35 +14,39 @@ import com.example.entrevistaTecnica.dto.Skill;
  */
 	
 @Service
-public class SkillServiceImpl implements ISkillService
-{
+public class SkillServiceImpl implements ISkillService {
 	
 	//Utilizamos los metodos de la interface ISkillDAO, es como si instaciaramos.
 	@Autowired
 	ISkillDAO iSkillDAO;
 
 	@Override
-	public List<Skill> listarSkills() {
+	public List<Skill> listarSkills() 
+	{
 		return iSkillDAO.findAll();
 	}
 
 	@Override
-	public Skill createSkill(Skill skill) {
+	public Skill createSkill(Skill skill) 
+	{
 		return iSkillDAO.save(skill);
 	}
 
 	@Override
-	public Skill readSkill(int id) {
+	public Skill readSkill(int id)
+	{
 		return iSkillDAO.findById(id).get();
 	}
 
 	@Override
-	public Skill updateSkill(Skill skill) {
+	public Skill updateSkill(Skill skill) 
+	{
 		return iSkillDAO.save(skill);
 	}
 
 	@Override
-	public void deleteSkill(int id) {
+	public void deleteSkill(int id) 
+	{
 		iSkillDAO.deleteById(id);
 	}
 

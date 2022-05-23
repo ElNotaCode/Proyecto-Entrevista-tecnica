@@ -12,18 +12,15 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.Fetch;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
- * @Autor Eloi Martorell Martín
+ * @author Eloi Martorell Martín
  * */
 
 @Entity
 @Table(name="skill")
-public class Skill
-{
+public class Skill {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -45,13 +42,14 @@ public class Skill
 	}
 	
 	/**
-	 * @param id
+	 * 
+	 * @param id_skill
 	 * @param skill_name
-	 * @param candidate_skill
+	 * @param candidateSkill
 	 */
 	public Skill(int id_skill, String skill_name, List<CandidateSkill> candidateSkill)
 	{
-		super();
+		
 		this.id_skill = id_skill;
 		this.skill_name = skill_name;
 		this.candidateSkill = candidateSkill;
@@ -60,7 +58,7 @@ public class Skill
 	//Getter & Setters
 
 	/**
-	 * @return the id
+	 * @return id_skill
 	 */
 	public int getId_skill() 
 	{
@@ -68,7 +66,7 @@ public class Skill
 	}
 
 	/**
-	 * @param id_skill the id_skill to set
+	 * @param id_skill
 	 */
 	public void setId_skill(int id_skill) 
 	{
@@ -76,7 +74,7 @@ public class Skill
 	}
 
 	/**
-	 * @return the skill name
+	 * @return skill_name
 	 */
 	public String getSkill_name() 
 	{
@@ -84,7 +82,7 @@ public class Skill
 	}
 
 	/**
-	 * @param skill_name the skill_name to set
+	 * @param skill_name
 	 */
 	public void setSkill_name(String skill_name) 
 	{
@@ -92,7 +90,7 @@ public class Skill
 	}
 
 	/**
-	 * @return the list of candidate skills
+	 * @return candidateSkill
 	 */
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "CandidateSkill")
@@ -102,7 +100,7 @@ public class Skill
 	}
 
 	/**
-	 * @param candidateSkill the candidateSkill to set
+	 * @param candidateSkill
 	 */
 	public void setCandidateSkill(List<CandidateSkill> candidateSkill) 
 	{

@@ -4,7 +4,10 @@ import java.util.List;
 
 import com.example.entrevistaTecnica.dto.Position;
 
-
+/**
+ * @author Marc López
+ *
+ */
 public interface IPositionService {
 	
 	

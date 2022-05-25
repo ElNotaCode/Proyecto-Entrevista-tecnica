@@ -14,6 +14,12 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+/**
+ * @author Marc López
+ *
+ */
+
+
 
 @Entity
 @Table(name="position_table")
@@ -21,6 +27,7 @@ public class Position {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)//busca ultimo valor e incrementa desde id final de db
+	@Column(name = "ID_POSITION")
 	private int id;
 
 	

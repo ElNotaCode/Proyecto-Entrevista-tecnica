@@ -8,7 +8,10 @@ import org.springframework.stereotype.Service;
 import com.example.entrevistaTecnica.dao.IPositionDAO;
 import com.example.entrevistaTecnica.dto.Position;
 
-
+/**
+ * @author Marc López
+ *
+ */
 @Service
 public class PositionServiceImpl implements IPositionService{
 	

@@ -36,8 +36,7 @@ foreign key (FK_ID_POSITION) references position_table(ID_POSITION)
 insert into hr_position (FK_ID_USER, FK_ID_POSITION)
 values (1, 1);
 
-insert into hr_position (FK_ID_USER, FK_ID_POSITION)
-values (11, 21);
+
 
 
 create table candidate (
@@ -64,10 +63,8 @@ foreign key (FK_ID_POSITION) references position_table(ID_POSITION),
 foreign key (FK_ID_CANDIDATE) references candidate(ID_CANDIDATE)
 );
 insert into candidate_position (REGISTRY_DATE, TEST_DATE, COMPLETION_DATE, RESULT, FK_ID_POSITION, FK_ID_CANDIDATE)
-values (20220518, 20220519, 20220519, 70, 11, 1);
+values (20220518, 20220519, 20220519, 70, 1, 1);
 
-insert into candidate_position (REGISTRY_DATE, TEST_DATE, COMPLETION_DATE, RESULT, FK_ID_POSITION, FK_ID_CANDIDATE)
-values (20220510, 20220515, 20220526, 40, 11, 11);
 
 create table skill(
 ID_SKILL int auto_increment primary key,
@@ -92,6 +89,5 @@ foreign key (FK_ID_SKILL) references skill(ID_SKILL)
 insert into candidate_skill (FK_ID_CANDIDATE, FK_ID_SKILL, VALUE_NUMBER, NOTES)
 values (1, 1, 90, 'Está aprendiendo HTML');
 
-insert into candidate_skill (FK_ID_CANDIDATE, FK_ID_SKILL, VALUE_NUMBER, NOTES)
-values (11, 11, 100, 'Proficiente en Node.js');
+
 

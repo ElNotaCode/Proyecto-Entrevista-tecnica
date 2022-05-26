@@ -16,7 +16,7 @@ import com.example.entrevistaTecnica.dto.Position;
 import com.example.entrevistaTecnica.service.PositionServiceImpl;
 /**
  * @author Marc López
- *
+ * @reviewed Eloy Martorell
  */
 
 

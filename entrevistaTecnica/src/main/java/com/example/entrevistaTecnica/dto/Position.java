@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * @author Marc López
- *
+ * @reviewed Eloy Martorell
  */
 
 

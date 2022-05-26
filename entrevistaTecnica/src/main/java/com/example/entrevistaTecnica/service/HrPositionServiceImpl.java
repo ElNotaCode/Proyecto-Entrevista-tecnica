@@ -12,7 +12,7 @@ import com.example.entrevistaTecnica.dto.HrPosition;
 
 /**
  * @author Marc López
- *
+ * @reviewed Eloy Martorell
  */
 
 @Service

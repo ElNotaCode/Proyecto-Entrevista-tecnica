@@ -6,7 +6,7 @@ import com.example.entrevistaTecnica.dto.CandidatePosition;
 
 /**
  * @author Borja
- *
+ * @reviewed Eloy Martorell
  */
 
 public interface ICandidatePositionService {

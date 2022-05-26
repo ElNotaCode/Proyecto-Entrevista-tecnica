@@ -4,6 +4,10 @@ import java.util.List;
 
 import com.example.entrevistaTecnica.dto.CandidateSkill;
 
+/**
+ * @author Eloi Martorell Martín
+ */
+
 public interface ICandidateSkillService {
 	
 	//Metodos del CRUD.

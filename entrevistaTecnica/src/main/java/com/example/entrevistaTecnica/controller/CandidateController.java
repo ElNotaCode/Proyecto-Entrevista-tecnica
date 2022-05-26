@@ -15,6 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.entrevistaTecnica.service.CandidateServiceImpl;
 import com.example.entrevistaTecnica.dto.Candidate;
 
+/**
+ * 
+ * @author Borja Montseny
+ * @reviewed Eloy Martorell
+ */
+
 @RestController
 @RequestMapping("/api")
 public class CandidateController {

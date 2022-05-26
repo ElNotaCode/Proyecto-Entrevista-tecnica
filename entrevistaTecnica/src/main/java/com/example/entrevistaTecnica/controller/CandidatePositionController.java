@@ -17,7 +17,7 @@ import com.example.entrevistaTecnica.service.CandidatePositionServiceImpl;
 
 /**
  * @author Borja
- *
+ * @reviewed Eloy Martorell
  */
 
 @RestController

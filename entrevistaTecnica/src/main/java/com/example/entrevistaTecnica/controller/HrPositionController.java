@@ -20,7 +20,7 @@ import com.example.entrevistaTecnica.service.HrPositionServiceImpl;
 
 /**
  * @author Marc López
- *
+ * @reviewed Eloy Martorell
  */
 
 @RestController

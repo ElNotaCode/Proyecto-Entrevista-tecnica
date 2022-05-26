@@ -15,7 +15,8 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
- * @author 
+ * @author Borja Montseny
+ * @reviewed Eloy Martorell
  * @reviewed Marc Lopez
  *
  */

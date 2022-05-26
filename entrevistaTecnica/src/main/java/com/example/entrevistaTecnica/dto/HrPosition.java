@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 /**
  * @author Marc López
- *
+ * @reviewed Eloy Martorell
  */
 
 @Entity

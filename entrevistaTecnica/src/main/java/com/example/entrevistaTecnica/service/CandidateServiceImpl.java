@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 import com.example.entrevistaTecnica.dao.ICandidateDAO;
 import com.example.entrevistaTecnica.dto.Candidate;
 
+/**
+ * @author Borja
+ * @reviewed Eloy Martorell
+ */
+
 @Service
 public class CandidateServiceImpl implements ICandidateService {
 

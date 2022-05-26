@@ -65,7 +65,7 @@ public class CandidateController {
 		return Candidate_actualizado;
 	}
 
-	@DeleteMapping("/registroCursos/{id}")
+	@DeleteMapping("/candidates/{id}")
 	public void eleiminarCandidate(@PathVariable(name = "id") int id) {
 		candidateServiceImpl.eliminarCandidate(id);
 	}

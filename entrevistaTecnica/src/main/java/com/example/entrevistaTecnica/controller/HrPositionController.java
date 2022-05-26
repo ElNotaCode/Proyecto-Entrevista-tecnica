@@ -49,8 +49,6 @@ public class HrPositionController {
 		
 		HrPosition_xid=hrPositionServiceImpl.hrPositionXID(id);
 		
-		System.out.println("hrPositionServiceImpl XID: "+HrPosition_xid);
-		
 		return HrPosition_xid;
 	}
 	
@@ -68,8 +66,6 @@ public class HrPositionController {
 
 		
 		HrPosition_actualizado = hrPositionServiceImpl.actualizarHrPosition(HrPosition_seleccionado);
-		
-		System.out.println("El hrPositionServiceImpl actualizado es: "+ HrPosition_actualizado);
 		
 		return HrPosition_actualizado;
 	}

@@ -48,8 +48,6 @@ public class PositionController {
 		
 		Position_xid=positionServiceImpl.positionXID(id);
 		
-		System.out.println("position XID: "+Position_xid);
-		
 		return Position_xid;
 	}
 	
@@ -65,8 +63,6 @@ public class PositionController {
 		Position_seleccionado.setDescription(position.getDescription());
 		
 		Position_actualizado = positionServiceImpl.actualizarPosition(Position_seleccionado);
-		
-		System.out.println("El Position actualizado es: "+ Position_actualizado);
 		
 		return Position_actualizado;
 	}

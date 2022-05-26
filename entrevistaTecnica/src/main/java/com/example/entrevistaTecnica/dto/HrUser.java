@@ -96,7 +96,7 @@ public class HrUser {
 	 * @return List<HrPosition> hrPosition
 	 */
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "HrUser")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "HrPosition")
 	public List<HrPosition> getHrPosition() 
 	{
 		return hrPosition;

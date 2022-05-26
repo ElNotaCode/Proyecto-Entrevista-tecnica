@@ -14,6 +14,12 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+/**
+ * @author 
+ * @reviewed Marc Lopez
+ *
+ */
+
 @Entity
 @Table(name = "candidate")
 public class Candidate {
@@ -21,7 +27,7 @@ public class Candidate {
 	// Atributos de la entidad Candidate
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	//@Column(name = "")//no hace falta si se llama igual
+	@Column(name = "ID_CANDIDATE")//no hace falta si se llama igual
 	private int id;
 
 	@Column(name = "CANDIDATE_NAME")

@@ -17,6 +17,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 /**
  * 
  * @author Eloi Martorell Martín
+ * @reviewed Marc Lopez
  *
  */
 @Entity
@@ -25,7 +26,10 @@ public class HrUser {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID_USER")
 	private int id_user;
+	
+	
 	@Column(name="USERNAME")
 	private String username;
 	

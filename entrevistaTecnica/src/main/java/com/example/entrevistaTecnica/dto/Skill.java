@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * @author Eloi Martorell Martín
+ * @reviewed Marc Lopez
  * */
 
 @Entity
@@ -24,6 +25,7 @@ public class Skill {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID_SKILL")//no hace falta si se llama igual
 	private int id_skill;
 	
 	@Column(name="SKILL_NAME")

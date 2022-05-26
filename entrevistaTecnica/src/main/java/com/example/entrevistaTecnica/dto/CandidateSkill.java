@@ -13,7 +13,7 @@ import javax.persistence.Table;
 
 /**
  * @author Eloi Martorell Martín
- *
+ * @reviewed Marc Lopez
  */
 
 @Entity
@@ -22,6 +22,7 @@ public class CandidateSkill {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="ID_CANDIDATE_SKILL")
 	private int id_candidate_skill;
 	
 	@Column(name="VALUE_NUMBER")

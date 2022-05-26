@@ -13,6 +13,11 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+/**
+ * @author 
+ * @reviewed Marc Lopez
+ *
+ */
 
 @Entity
 @Table(name = "candidate_position")
@@ -21,6 +26,7 @@ public class CandidatePosition {
 	// Atributos de la entidad candidate_position
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="ID_CANDIDATE_POSITION")
 	private int id;
 
 	@Temporal(TemporalType.DATE)

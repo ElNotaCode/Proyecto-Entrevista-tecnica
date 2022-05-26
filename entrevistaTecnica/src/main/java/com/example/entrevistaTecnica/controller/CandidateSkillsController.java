@@ -18,7 +18,7 @@ import com.example.entrevistaTecnica.service.CandidateSkillServiceImpl;
 /**
  * 
  * @author Eloi Martorell Martín
- *
+ * @reviewed Marc Lopez
  */
 
 @RestController

@@ -1,4 +1,4 @@
-package dto;
+package com.example.entrevistaTecnica.dto;
 
 import java.util.List;
 

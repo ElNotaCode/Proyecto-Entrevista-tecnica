@@ -69,6 +69,13 @@ public class HrPosition {
 	public void setFk_id_position(Position fk_id_position) {
 		this.fk_id_position = fk_id_position;
 	}
+
+	@Override
+	public String toString() {
+		return "HrPosition [id=" + id + ", fk_id_user=" + fk_id_user + ", fk_id_position=" + fk_id_position + "]";
+	}
+	
+	
 	
     
 	

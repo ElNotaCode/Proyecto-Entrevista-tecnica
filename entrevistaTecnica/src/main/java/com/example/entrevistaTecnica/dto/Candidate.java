@@ -21,6 +21,7 @@ public class Candidate {
 	// Atributos de la entidad Candidate
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@Column(name = "")//no hace falta si se llama igual
 	private int id;
 
 	@Column(name = "CANDIDATE_NAME")

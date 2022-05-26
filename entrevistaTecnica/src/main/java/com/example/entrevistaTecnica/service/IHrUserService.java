@@ -1,8 +1,8 @@
-package service;
+package com.example.entrevistaTecnica.service;
 
 import java.util.List;
 
-import dto.HrUser;
+import com.example.entrevistaTecnica.dto.HrUser;
 
 /**
  * 

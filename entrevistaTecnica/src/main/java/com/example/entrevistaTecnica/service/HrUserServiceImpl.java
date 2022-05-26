@@ -1,12 +1,12 @@
-package service;
+package com.example.entrevistaTecnica.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import dao.IHrUserDAO;
-import dto.HrUser;
+import com.example.entrevistaTecnica.dao.IHrUserDAO;
+import com.example.entrevistaTecnica.dto.HrUser;
 
 /**
  * 

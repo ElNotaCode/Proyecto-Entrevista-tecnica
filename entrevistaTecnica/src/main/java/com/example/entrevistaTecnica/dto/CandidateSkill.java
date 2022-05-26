@@ -1,8 +1,7 @@
 package com.example.entrevistaTecnica.dto;
 
-<<<<<<< HEAD
-public class CandidateSkill {
-=======
+
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -151,6 +150,6 @@ public class CandidateSkill {
 		return "CandidateSkill [id_candidate_skill=" + id_candidate_skill + ", value_number=" + value_number
 				+ ", notes=" + notes + ", skill=" + skill + ", candidate=" + candidate + "]";
 	}
->>>>>>> origin/pre_production_api
+
 
 }

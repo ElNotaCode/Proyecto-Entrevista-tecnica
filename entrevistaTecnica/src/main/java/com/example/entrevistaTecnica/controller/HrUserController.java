@@ -1,4 +1,4 @@
-package controller;
+package com.example.entrevistaTecnica.controller;
 
 import java.util.List;
 
@@ -12,8 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import dto.HrUser;
-import service.HrUserServiceImpl;
+import com.example.entrevistaTecnica.dto.HrUser;
+import com.example.entrevistaTecnica.service.HrUserServiceImpl;
+
+
 
 /**
  * 

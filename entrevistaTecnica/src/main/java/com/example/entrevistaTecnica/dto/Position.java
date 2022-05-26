@@ -40,13 +40,12 @@ public class Position {
 	
 	
 	
-	/*
 	
 	@OneToMany
     @JoinColumn(name="id")
     private List<HrPosition> hrPosition;
+   
     
-    */
     
     
     
@@ -57,13 +56,13 @@ public class Position {
 		
 	}
 
-									/* List<HrPosition> hrPosition*/
-	public Position(int id, String title, String description) {
+							
+	public Position(int id, String title, String description,List<HrPosition> hrPosition) {
 		super();
 		this.id = id;
 		this.title = title;
 		this.description = description;
-		//this.hrPosition = hrPosition;
+		this.hrPosition = hrPosition;
 	}
 
 
@@ -103,9 +102,7 @@ public class Position {
 	}
 
 
-	/*
-	 *
-	 *
+	
 	
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "HrPosition")
@@ -119,7 +116,7 @@ public class Position {
 		this.hrPosition = hrPosition;
 	}
 
- */
+ 
 	@Override
 	public String toString() {
 		return "Position [id=" + id + ", title=" + title + ", description=" + description + "]";

@@ -1,8 +1,8 @@
-package dao;
+package com.example.entrevistaTecnica.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import dto.HrUser;
+import com.example.entrevistaTecnica.dto.HrUser;
 
 /**
  * 

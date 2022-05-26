@@ -3,10 +3,12 @@ package com.example.entrevistaTecnica.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.entrevistaTecnica.dao.ICandidateDAO;
 import com.example.entrevistaTecnica.dto.Candidate;
 
+@Service
 public class CandidateServiceImpl implements ICandidateService {
 
 	@Autowired

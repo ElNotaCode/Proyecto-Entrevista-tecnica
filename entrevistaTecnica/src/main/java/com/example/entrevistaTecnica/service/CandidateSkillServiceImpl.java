@@ -3,6 +3,7 @@ package com.example.entrevistaTecnica.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.entrevistaTecnica.dao.ICandidateSkillDAO;
 import com.example.entrevistaTecnica.dto.CandidateSkill;
@@ -13,6 +14,7 @@ import com.example.entrevistaTecnica.dto.CandidateSkill;
  *
  */
 
+@Service
 public class CandidateSkillServiceImpl implements ICandidateSkillService{
 
 	//Utilizamos los metodos de la interface ICandidateSkillDAO, es como si instaciaramos.

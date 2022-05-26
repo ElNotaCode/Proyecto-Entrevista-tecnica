@@ -9,6 +9,7 @@ import com.example.entrevistaTecnica.dao.IHrPositionDAO;
 import com.example.entrevistaTecnica.dto.HrPosition;
 
 
+
 /**
  * @author Marc López
  *
@@ -47,10 +48,12 @@ public class HrPositionServiceImpl implements  IHrPositionService{
 
 	@Override
 	public void eliminarHrPosition(int id) {
-		// TODO Auto-generated method stub
 		iHrPositionDAO.deleteById(id);
-
 		
 	}
+
+	
+
+
 
 }

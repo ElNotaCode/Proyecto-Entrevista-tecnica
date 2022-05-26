@@ -91,7 +91,7 @@ public class Candidate {
 	}
 
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "CandidatePositionq")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "CandidatePosition")
 	public List<CandidatePosition> getCandidatePosition() {
 		return candidatePosition;
 	}

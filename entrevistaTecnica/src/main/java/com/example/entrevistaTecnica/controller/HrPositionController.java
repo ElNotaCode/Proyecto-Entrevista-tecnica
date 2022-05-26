@@ -29,20 +29,20 @@ public class HrPositionController {
 	@Autowired
 	HrPositionServiceImpl hrPositionServiceImpl;
 	
-	@GetMapping("/hrposition")
+	@GetMapping("/hrPosition")
 	public List<HrPosition> listarHrPosition(){
 		return hrPositionServiceImpl.listarHrPosition();
 	}
 	
 	
-	@PostMapping("/hrposition")
+	@PostMapping("/hrPosition")
 	public HrPosition salvarHrPosition(@RequestBody HrPosition hrPosition) {
 		
 		return hrPositionServiceImpl.guardarHrPosition(hrPosition);
 	}
 	
 	
-	@GetMapping("/hrposition/{id}")
+	@GetMapping("/hrPosition/{id}")
 	public HrPosition hrPositionXID(@PathVariable(name="id") int id) {
 		
 		HrPosition HrPosition_xid= new HrPosition();
@@ -52,7 +52,7 @@ public class HrPositionController {
 		return HrPosition_xid;
 	}
 	
-	@PutMapping("/hrposition/{id}")
+	@PutMapping("/hrPosition/{id}")
 	public HrPosition actualizarHrPosition(@PathVariable(name="id")int id,@RequestBody HrPosition hrPosition) {
 		
 		HrPosition HrPosition_seleccionado= new HrPosition();
@@ -70,7 +70,7 @@ public class HrPositionController {
 		return HrPosition_actualizado;
 	}
 	
-	@DeleteMapping("/hrposition/{id}")
+	@DeleteMapping("/hrPosition/{id}")
 	public void eleiminarCurso(@PathVariable(name="id")int id) {
 		hrPositionServiceImpl.eliminarHrPosition(id);
 	}

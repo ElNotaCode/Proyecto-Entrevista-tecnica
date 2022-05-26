@@ -1,5 +1,9 @@
 package com.example.entrevistaTecnica.controller;
 
+/**
+ * @author Eloi Martorell Martín
+ */
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

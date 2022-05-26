@@ -9,8 +9,7 @@ import com.example.entrevistaTecnica.dto.Skill;
  *
  */
 
-public interface ISkillService 
-{
+public interface ISkillService {
 	
 	//Metodos del CRUD.
 	

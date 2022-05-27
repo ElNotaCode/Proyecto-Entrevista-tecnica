@@ -75,13 +75,5 @@ public class HrPosition {
 		return "HrPosition [id=" + id + ", fk_id_user=" + fk_id_user + ", fk_id_position=" + fk_id_position + "]";
 	}
 	
-	
-	
-    
-	
-    
-    
-	
-	
 
 }

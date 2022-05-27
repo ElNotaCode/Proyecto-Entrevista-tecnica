@@ -25,14 +25,14 @@ public class Skill {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID_SKILL")//no hace falta si se llama igual
+	@Column(name = "ID_SKILL")
 	private int id_skill;
 	
 	@Column(name="SKILL_NAME")
 	private String skill_name;
 	
 	@OneToMany
-	@JoinColumn(name="ID_SKILL")
+	@JoinColumn(name="FK_ID_SKILL")
 	List<CandidateSkill> candidateSkill;
 	
 	//Constructors.

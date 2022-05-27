@@ -30,33 +30,21 @@ public class Position {
 	@Column(name = "ID_POSITION")
 	private int id;
 
-	
 	@Column(name = "TITLE")
 	private String title;
-	
 	
 	@Column(name = "DESCRIPTION")
 	private String description;
 	
-	
-	
-	
 	@OneToMany
-    @JoinColumn(name="id")
+    @JoinColumn(name="FK_ID_POSITION")
     private List<HrPosition> hrPosition;
    
-    
-    
-    
-    
-    
-
 	public Position() {
 		super();
 		
 	}
-
-							
+					
 	public Position(int id, String title, String description,List<HrPosition> hrPosition) {
 		super();
 		this.id = id;
@@ -65,69 +53,44 @@ public class Position {
 		this.hrPosition = hrPosition;
 	}
 
-
-
 	public int getId() {
 		return id;
 	}
-
-
 
 	public void setId(int id) {
 		this.id = id;
 	}
 
-
-
 	public String getTitle() {
 		return title;
 	}
-
-
 
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
-
-
 	public String getDescription() {
 		return description;
 	}
-
-
 
 	public void setDescription(String description) {
 		this.description = description;
 	}
 
-
-	
-	
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "HrPosition")
 	public List<HrPosition> getHrPosition() {
 		return hrPosition;
 	}
 
-
-
 	public void setHr_Position(List<HrPosition> hrPosition) {
 		this.hrPosition = hrPosition;
 	}
 
- 
 	@Override
 	public String toString() {
 		return "Position [id=" + id + ", title=" + title + ", description=" + description + "]";
 	}
-	
-	
-	
-    
-    
-	
-	
 	
 	
 }

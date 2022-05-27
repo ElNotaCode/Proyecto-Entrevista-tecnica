@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.entrevistaTecnica.dto.HrUser;
 import com.example.entrevistaTecnica.service.HrUserServiceImpl;
 
-
-
 /**
  * 
  * @author Eloi Martorell Martín

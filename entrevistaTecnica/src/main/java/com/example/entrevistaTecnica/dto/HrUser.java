@@ -34,7 +34,7 @@ public class HrUser {
 	private String username;
 	
 	@OneToMany
-	@JoinColumn(name="ID_USER")
+	@JoinColumn(name="FK_ID_USER")
 	private List<HrPosition> hrPosition;
 	
 	//Constructors.
@@ -110,7 +110,5 @@ public class HrUser {
 	{
 		this.hrPosition = hrPosition;
 	}
-	
-	
 
 }

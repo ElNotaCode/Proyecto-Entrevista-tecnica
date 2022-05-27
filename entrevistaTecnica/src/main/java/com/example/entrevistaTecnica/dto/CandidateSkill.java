@@ -1,7 +1,5 @@
 package com.example.entrevistaTecnica.dto;
 
-
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -32,11 +30,11 @@ public class CandidateSkill {
 	
 	@ManyToOne
 	@JoinColumn(name="FK_ID_SKILL")
-	private Skill skill;
+	Skill skill;
 	
 	@ManyToOne
 	@JoinColumn(name="FK_ID_CANDIDATE")
-	private Candidate candidate;
+	Candidate candidate;
 	
 	//Constructors.
 	

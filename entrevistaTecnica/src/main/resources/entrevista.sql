@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS heroku_07e20de42ac8f09;
+CREATE DATABASE heroku_07e20de42ac8f09;
 use heroku_07e20de42ac8f09;
 
 create table hr_user (
@@ -32,13 +34,10 @@ FK_ID_USER int not null,
 FK_ID_POSITION int not null,
 foreign key (FK_ID_USER) references hr_user(ID_USER),
 foreign key (FK_ID_POSITION) references position_table(ID_POSITION)
+ON UPDATE CASCADE ON DELETE CASCADE
 );
 insert into hr_position (FK_ID_USER, FK_ID_POSITION)
 values (1, 1);
-
-insert into hr_position (FK_ID_USER, FK_ID_POSITION)
-values (11, 21);
-
 
 create table candidate (
 ID_CANDIDATE int auto_increment,
@@ -62,12 +61,11 @@ FK_ID_POSITION int not null,
 FK_ID_CANDIDATE int not null,
 foreign key (FK_ID_POSITION) references position_table(ID_POSITION),
 foreign key (FK_ID_CANDIDATE) references candidate(ID_CANDIDATE)
+ON UPDATE CASCADE ON DELETE CASCADE
 );
 insert into candidate_position (REGISTRY_DATE, TEST_DATE, COMPLETION_DATE, RESULT, FK_ID_POSITION, FK_ID_CANDIDATE)
-values (20220518, 20220519, 20220519, 70, 11, 1);
+values (20220518, 20220519, 20220519, 70, 1, 1);
 
-insert into candidate_position (REGISTRY_DATE, TEST_DATE, COMPLETION_DATE, RESULT, FK_ID_POSITION, FK_ID_CANDIDATE)
-values (20220510, 20220515, 20220526, 40, 11, 11);
 
 create table skill(
 ID_SKILL int auto_increment primary key,
@@ -88,10 +86,7 @@ VALUE_NUMBER float,
 NOTES varchar(150),
 foreign key (FK_ID_CANDIDATE) references candidate(ID_CANDIDATE),
 foreign key (FK_ID_SKILL) references skill(ID_SKILL)
+ON UPDATE CASCADE ON DELETE CASCADE
 );
 insert into candidate_skill (FK_ID_CANDIDATE, FK_ID_SKILL, VALUE_NUMBER, NOTES)
 values (1, 1, 90, 'Está aprendiendo HTML');
-
-insert into candidate_skill (FK_ID_CANDIDATE, FK_ID_SKILL, VALUE_NUMBER, NOTES)
-values (11, 11, 100, 'Proficiente en Node.js');
-

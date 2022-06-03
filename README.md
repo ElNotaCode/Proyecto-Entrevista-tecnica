@@ -25,7 +25,6 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#licencia">Licencia</a></li>
     <li><a href="#contacto">Contacto</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -79,6 +78,8 @@ Este es el [enlace](https://drive.google.com/file/d/1f9N4vLu0kNr2gcyllgPyrOLPlyn
         
 <p align="right"><a href="#top">volver arriba</a></p>
 
+<div id="roadmap"></div>
+  
 ## 🗺️ Roadmap
 Este es el [enlace](https://trello.com/b/xsBoZ12B/team-domino) al Trello (modelo Kanban), una herramienta para representar tareas, objetivos y deadlines de forma dinámica.
 

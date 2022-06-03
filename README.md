@@ -18,13 +18,13 @@
     <li>
       <a href="#sobre-el-proyecto">Sobre el proyecto</a>
       <ul>
-        <li><a href="#tecnologías-utilizadas">Tecnologías utilizadas</a></li>
+        <li><a href="#tecnologias-utilizadas">Tecnologías utilizadas</a></li>
       </ul>
     </li>
     <li><a href="#ramas-principales">Ramas</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#licencia">Licencia</a></li>
+    <li><a href="#contacto">Contacto</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -35,7 +35,9 @@ Hemos elegido el proyecto de la Entrevista Técnica para T-Systems porqué nos h
 Este es el [enlace](https://drive.google.com/file/d/1f9N4vLu0kNr2gcyllgPyrOLPlyn3Zq8f/view?usp=sharing) del esquema y enunciado del proyecto a partir del cual hemos desarrollado nuestro proyecto.
 <p align="right"><a href="#top">volver arriba</a></p>
 
-### Tecnologías utilizadas
+<div id="tecnologias-utilizadas"></div>
+
+### 🛠️ Tecnologías utilizadas
 
 **Para la parte del Back-End, que está hosteada en [Heroku](https://www.heroku.com/)**
 <ul>
@@ -91,9 +93,9 @@ Este es el [enlace](https://trello.com/b/xsBoZ12B/team-domino) al Trello (modelo
      - [x] Mapear tablas intermedias
      - [x] Añadir seguridad
      - [x] Implementación de roles
-      - [x] admin
-      - [x] hr_user
-      - [x] candidate
+       - [x] admin
+       - [x] hr_user
+        - [x] candidate
   - [x] Deploy de la API
   
 - [ ] Front-End
@@ -104,4 +106,12 @@ Este es el [enlace](https://trello.com/b/xsBoZ12B/team-domino) al Trello (modelo
 
 <p align="right"><a href="#top">volver arriba</a></p>
 
-## Contacto
+<div id="licencia"></div>
+  
+## Licencia
+  
+Distribuido bajo la licencia Creative Commons. Consulte `LICENSE.txt` para obtener más información.
+  
+<div id="contacto"></div>
+  
+## 📮 Contacto

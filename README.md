@@ -107,8 +107,8 @@ Este es el [enlace](https://trello.com/b/xsBoZ12B/team-domino) al Trello (modelo
   - [x] Deploy de la API
   
 - [ ] Front-End
-  - [x] Web
-  - [x] Deploy de la Web
+  - [ ] Web
+  - [ ] Deploy de la Web
     
 - [ ] Presentación
   - [ ] Presentación demo (simulación)

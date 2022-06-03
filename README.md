@@ -3,7 +3,7 @@
 <table width="100%" align=center>
   <tr>
     <th><img src="https://cdn.discordapp.com/attachments/971012872794681423/979711340174250074/iconoTeam4.png" alt="Icono Team 4" width="75" height="65"></th>
-    <th align=center><h1>Proyecto Final: Entrevista Técnica</h1></th>
+    <th align=center><h1>Entrevista Técnica</h1></th>
     <th><img src="https://www.elindependiente.com/wp-content/uploads/2020/12/fotonoticia_20181217124629_420.jpg" alt="Icono T-Systems" width="100" height="65"></th>
   </tr>
   <tr>

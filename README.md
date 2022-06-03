@@ -6,9 +6,6 @@
     <th align=center><h1>Entrevista Técnica</h1></th>
     <th><img src="https://www.elindependiente.com/wp-content/uploads/2020/12/fotonoticia_20181217124629_420.jpg" alt="Icono T-Systems" width="100" height="65"></th>
   </tr>
-  <tr>
-    <td colspan="3" align=center><a href="https://github.com/ElNotaCode">Eloi Martorell</a> | <a href="https://github.com/Marclopez11">Marc López</a> | <a href="https://github.com/borjaMontseny">Borja Montseny</a></td>
-  </tr>
 </table>
 <br> 
 

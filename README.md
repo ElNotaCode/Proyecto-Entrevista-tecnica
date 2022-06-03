@@ -21,9 +21,8 @@
         <li><a href="#tecnologías-utilizadas">Tecnologías utilizadas</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#ramas">Ramas</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#ramas-principales">Ramas</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -33,13 +32,12 @@
 ## Sobre el proyecto
 Hemos elegido el proyecto de la Entrevista Técnica para T-Systems porqué nos ha parecido distinto a los demás tipos de proyecto.
 <br>
-Este es el [enlace](https://drive.google.com/file/d/1f9N4vLu0kNr2gcyllgPyrOLPlyn3Zq8f/view?usp=sharing) del esquema y enunciado del proyecto
+Este es el [enlace](https://drive.google.com/file/d/1f9N4vLu0kNr2gcyllgPyrOLPlyn3Zq8f/view?usp=sharing) del esquema y enunciado del proyecto a partir del cual hemos desarrollado nuestro proyecto.
 <p align="right"><a href="#top">volver arriba</a></p>
 
 ### Tecnologías utilizadas
 
-**Para la parte del Back-End, que está hosteado en [Heroku](https://www.heroku.com/):**
-
+**Para la parte del Back-End, que está hosteada en [Heroku](https://www.heroku.com/)**
 <ul>
   <li>Base de Datos</li>
   <ul>
@@ -54,11 +52,21 @@ Este es el [enlace](https://drive.google.com/file/d/1f9N4vLu0kNr2gcyllgPyrOLPlyn
 
 <br>
 
-**Para la parte de Front-End, que está hosteado en [Amazon Web Service](https://aws.amazon.com/es/):**
+**Para la parte de Front-End, que está hosteada en [Amazon Web Service](https://aws.amazon.com/es/)**
+<ul>
+  <li>Web</li>
+  <ul>
+      <li>Angular</li>
+        <ul>
+          <li>TypeScript</li>
+          <li>HTML</li>
+          <li>Bootstrap</li>
+        </ul>
+    </ul>
 
 <p align="right"><a href="#top">volver arriba</a></p>
 
-### Ramas principales del proyecto
+## Ramas principales
     main
     └───deploy-heroku
         └───preproduccíon-api (ya eliminada)
@@ -66,11 +74,34 @@ Este es el [enlace](https://drive.google.com/file/d/1f9N4vLu0kNr2gcyllgPyrOLPlyn
 <p align="right"><a href="#top">volver arriba</a></p>
 
 ## Roadmap
+Este es el [enlace](https://trello.com/b/xsBoZ12B/team-domino) al Trello (modelo Kanban), una herramienta para representar tareas, objetivos y deadlines de forma dinámica.
 
-- [x] Documentación (readme.md)
-- [x] Back-End terminado
-- [ ] Front-End terminado
+- [x] Documentación (README.md)
+- [x] Back-End
+   - [x] Base de Datos
+     - [x] Diagrama Entidad - Relación
+     - [x] Modelo Relacional
+     - [x] Tablas principales
+     - [x] Tablas intermedias
+     - [x] Inserción de tuplas en cada tabla
+  - [x] Deploy de la BDD
+  
+   - [x] API
+     - [x] Mapear tablas principales
+     - [x] Mapear tablas intermedias
+     - [x] Añadir seguridad
+     - [x] Implementación de roles
+      - [x] admin
+      - [x] hr_user
+      - [x] candidate
+  - [x] Deploy de la BDD
+  
+- [ ] Front-End
+    
 - [ ] Presentación
+  - [ ] Presentación demo
+  - [ ] Presentación definitiva
 
 <p align="right"><a href="#top">volver arriba</a></p>
 
+## Contacto

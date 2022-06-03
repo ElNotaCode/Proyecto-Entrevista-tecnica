@@ -101,7 +101,7 @@ Este es el [enlace](https://trello.com/b/xsBoZ12B/team-domino) al Trello (modelo
 - [ ] Front-End
     
 - [ ] Presentación
-  - [ ] Presentación demo
+  - [ ] Presentación demo (simulación)
   - [ ] Presentación definitiva
 
 <p align="right"><a href="#top">volver arriba</a></p>

@@ -21,7 +21,7 @@
         <li><a href="#tecnologias-utilizadas">Tecnologías utilizadas</a></li>
       </ul>
     </li>
-    <li><a href="#ramas-principales">Ramas</a></li>
+    <li><a href="#ramas">Ramas</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#licencia">Licencia</a></li>
     <li><a href="#contacto">Contacto</a></li>
@@ -29,7 +29,9 @@
   </ol>
 </details>
 
-## Sobre el proyecto
+<div id="sobre-el-proyecto"></div>
+
+##  🚀 Sobre el proyecto
 Hemos elegido el proyecto de la Entrevista Técnica para T-Systems porqué nos ha parecido distinto a los demás tipos de proyecto.
 <br>
 Este es el [enlace](https://drive.google.com/file/d/1f9N4vLu0kNr2gcyllgPyrOLPlyn3Zq8f/view?usp=sharing) del esquema y enunciado del proyecto a partir del cual hemos desarrollado nuestro proyecto.
@@ -37,7 +39,7 @@ Este es el [enlace](https://drive.google.com/file/d/1f9N4vLu0kNr2gcyllgPyrOLPlyn
 
 <div id="tecnologias-utilizadas"></div>
 
-### 🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 
 **Para la parte del Back-End, que está hosteada en [Heroku](https://www.heroku.com/)**
 <ul>
@@ -68,14 +70,16 @@ Este es el [enlace](https://drive.google.com/file/d/1f9N4vLu0kNr2gcyllgPyrOLPlyn
 
 <p align="right"><a href="#top">volver arriba</a></p>
 
-## Ramas principales
+<div id="ramas"></div>
+  
+## 🌿 Ramas
     main
     └───deploy-heroku
-        └───preproduccíon-api (ya eliminada)
+        └───preproduccion-api (ya eliminada)
         
 <p align="right"><a href="#top">volver arriba</a></p>
 
-## Roadmap
+## 🗺️ Roadmap
 Este es el [enlace](https://trello.com/b/xsBoZ12B/team-domino) al Trello (modelo Kanban), una herramienta para representar tareas, objetivos y deadlines de forma dinámica.
 
 - [x] Documentación (README.md)
@@ -99,6 +103,8 @@ Este es el [enlace](https://trello.com/b/xsBoZ12B/team-domino) al Trello (modelo
   - [x] Deploy de la API
   
 - [ ] Front-End
+  - [x] Web
+  - [x] Deploy de la Web
     
 - [ ] Presentación
   - [ ] Presentación demo (simulación)
@@ -108,10 +114,16 @@ Este es el [enlace](https://trello.com/b/xsBoZ12B/team-domino) al Trello (modelo
 
 <div id="licencia"></div>
   
-## Licencia
+## 📜 Licencia
   
 Distribuido bajo la licencia Creative Commons. Consulte `LICENSE.txt` para obtener más información.
   
 <div id="contacto"></div>
   
 ## 📮 Contacto
+
+  [Eloi Martín Martorell](https://github.com/ElNotaCode) - eloi.martin174@gmail.com
+  
+  [Marc López Marco](https://github.com/Marclopez11) - marclopezmarco469@gmail.com
+  
+  [Borja Montseny Peris](https://github.com/borjaMontseny) - borja.montseny@gmail.com

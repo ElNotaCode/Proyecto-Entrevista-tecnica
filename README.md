@@ -94,7 +94,7 @@ Este es el [enlace](https://trello.com/b/xsBoZ12B/team-domino) al Trello (modelo
       - [x] admin
       - [x] hr_user
       - [x] candidate
-  - [x] Deploy de la BDD
+  - [x] Deploy de la API
   
 - [ ] Front-End
     

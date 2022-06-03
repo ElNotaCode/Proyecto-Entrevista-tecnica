@@ -30,9 +30,12 @@
 
 <div id="sobre-el-proyecto"></div>
 
-##  🚀 Sobre el proyecto
-Hemos elegido el proyecto de la Entrevista Técnica para T-Systems porqué nos ha parecido distinto a los demás tipos de proyecto.
+## 🚀 Sobre el proyecto
+Hemos elegido el proyecto de la Entrevista Técnica para T-Systems porqué nos ha parecido distinto a los demás tipos de proyectos.
 <br>
+
+<br>
+
 Este es el [enlace](https://drive.google.com/file/d/1f9N4vLu0kNr2gcyllgPyrOLPlyn3Zq8f/view?usp=sharing) del esquema y enunciado del proyecto a partir del cual hemos desarrollado nuestro proyecto.
 <p align="right"><a href="#top">volver arriba</a></p>
 

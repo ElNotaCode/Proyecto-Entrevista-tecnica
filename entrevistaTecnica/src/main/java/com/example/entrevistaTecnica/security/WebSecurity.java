@@ -2,6 +2,8 @@ package com.example.entrevistaTecnica.security;
 
 import static com.example.entrevistaTecnica.security.Constants.LOGIN_URL;
 
+import java.util.Arrays;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -43,11 +45,12 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 		httpSecurity
 			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
 			.cors().and()
-			.csrf().disable()
-			.authorizeRequests().antMatchers(HttpMethod.POST, LOGIN_URL).permitAll()
+			.csrf().disable();
+			/*.authorizeRequests().antMatchers(HttpMethod.POST, LOGIN_URL).permitAll()
+			.antMatchers("/swagger-ui.html", "/v2/api-docs", "/webjars/**","/swagger-resources/**").permitAll()
 			.anyRequest().authenticated().and()
 				.addFilter(new JWTAuthenticationFilter(authenticationManager()))
-				.addFilter(new JWTAuthorizationFilter(authenticationManager()));
+				.addFilter(new JWTAuthorizationFilter(authenticationManager()));*/
 	}
 
 	@Override
@@ -58,8 +61,11 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 
 	@Bean
 	CorsConfigurationSource corsConfigurationSource() {
-		final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-		source.registerCorsConfiguration("/**", new CorsConfiguration().applyPermitDefaultValues());
+        CorsConfiguration configuration = new CorsConfiguration();
+        //configuration.setAllowedOrigins(Arrays.asList("main.d2ckn95sow20us.amplifyapp.com/"));
+        configuration.setAllowedMethods(Arrays.asList("GET","POST","PUT","DELETE"));
+        final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", new CorsConfiguration().applyPermitDefaultValues().combine(configuration));
 		return source;
 	}
 }

@@ -16,36 +16,26 @@ import org.springframework.stereotype.Component;
 @Component
 public class SimpleCORSFilter implements Filter {
 
-private final Logger log = LoggerFactory.getLogger(SimpleCORSFilter.class);
-
-public SimpleCORSFilter() {
-    log.info("SimpleCORSFilter init");
-}
-
-@Override
-public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
-
-    HttpServletRequest request = (HttpServletRequest) req;
-    HttpServletResponse response = (HttpServletResponse) res;
-
-    response.setHeader("Access-Control-Allow-Origin", request.getHeader("Origin"));
-    response.setHeader("Access-Control-Allow-Credentials", "true");
-    response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
-    response.setHeader("Access-Control-Max-Age", "3600");
-    response.setHeader("Access-Control-Allow-Headers", "Content-Type, Accept, X-Requested-With, remember-me, Host, Content-Lenght");
-
-    chain.doFilter(req, res);
-}
-
-
-
-
-@Override
-public void init(FilterConfig filterConfig) {
-}
-
-@Override
-public void destroy() {
-}
-
+	private final Logger log = LoggerFactory.getLogger(SimpleCORSFilter.class);
+	
+	public SimpleCORSFilter() {
+	    log.info("SimpleCORSFilter init");
+	}
+	
+	@Override
+	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException 
+	{
+		final HttpServletResponse response = (HttpServletResponse) res;
+		final HttpServletRequest request = (HttpServletRequest) req;
+		response.setHeader("Access-Control-Allow-Origin", request.getHeader("/**"));
+		response.setHeader("Access-Control-Allow-Headers","X-ACCESS_TOKEN, Access-Control-Allow-Origin, Authorization, Origin, x-requested-with, Content-Type, Accept, Content-Range, Content-Disposition, Content-Description");
+        
+        chain.doFilter(req, res);
+	}
+	
+	@Override
+	public void init(FilterConfig filterConfig) {}
+	
+	@Override
+	public void destroy() {}
 }

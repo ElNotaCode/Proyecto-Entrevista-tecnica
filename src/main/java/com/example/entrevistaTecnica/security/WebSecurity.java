@@ -1,6 +1,7 @@
 package com.example.entrevistaTecnica.security;
 
 import static com.example.entrevistaTecnica.security.Constants.LOGIN_URL;
+import static com.example.entrevistaTecnica.security.Constants.POSITIONS;
 
 import java.util.Arrays;
 
@@ -48,6 +49,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 			.csrf().disable()
 			.authorizeRequests().antMatchers(HttpMethod.POST, LOGIN_URL).permitAll()
 			.antMatchers("/swagger-ui.html", "/v2/api-docs", "/webjars/**","/swagger-resources/**").permitAll()
+			.antMatchers(HttpMethod.GET, POSITIONS).permitAll()
 			.anyRequest().authenticated().and()
 				.addFilter(new JWTAuthenticationFilter(authenticationManager()))
 				.addFilter(new JWTAuthorizationFilter(authenticationManager()));
